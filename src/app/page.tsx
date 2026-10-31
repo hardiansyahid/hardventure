@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { CopyrightYear } from "@/components/CopyrightYear";
 
 type IconName =
   | "arrow"
@@ -316,7 +317,7 @@ export default function Home() {
           <p>Where curiosity becomes creation.<br />Made with intention.</p>
           <div className="footer-links"><a href="#home">Home</a><a href="#about">About</a><a href="#products">Products</a><a href="#contact">Contact</a></div>
         </div>
-        <div className="container footer-bottom"><span>© {new Date().getFullYear()} HARDVENTURE STUDIO. ALL RIGHTS RESERVED.</span><a href="#home">BACK TO THE BEGINNING <b>↑</b></a></div>
+        <div className="container footer-bottom"><span>© <CopyrightYear /> HARDVENTURE STUDIO. ALL RIGHTS RESERVED.</span><a href="#home">BACK TO THE BEGINNING <b>↑</b></a></div>
       </footer>
 
       <button
