@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { CopyrightYear } from "@/components/CopyrightYear";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 type IconName =
   | "arrow"
@@ -161,6 +162,8 @@ export default function Home() {
           <a href="#contact" className="nav-cta" onClick={closeMenu}>
             Get in touch <Icon name="arrow" size={16} />
           </a>
+
+          <ThemeToggle />
         </div>
       </header>
 
